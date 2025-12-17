@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Random Joke App</title>
+</head>
+
+<body class="bg-gradient-to-br from-indigo-500 to-purple-600 min-h-screen flex items-center justify-center">
+
+    <!-- Card -->
+    <div class="bg-white w-[90%] max-w-md rounded-2xl shadow-2xl p-6 text-center">
+
+        <!-- Title -->
+        <h1 class="text-2xl font-bold text-gray-800 mb-2">
+            😂 Random Joke Generator
+        </h1>
+
+        <p class="text-gray-500 text-sm mb-5">
+            Click the button to get a fresh joke
+        </p>
+
+        <!-- Joke Box -->
+        <div id="joke" class="min-h-[80px] flex items-center justify-center text-gray-700 text-lg mb-6 px-3">
+            Your joke will appear here 😄
+        </div>
+
+        <!-- Button -->
+        <button id="button" onclick="getjoke()"
+            class="bg-indigo-600 hover:bg-indigo-700 transition-all duration-300 text-white font-semibold px-6 py-3 rounded-xl shadow-md active:scale-95">
+            Get Random Joke
+        </button>
+
+        <!-- Footer -->
+        <p class="text-xs text-gray-400 mt-6">
+            Built with ❤️ using JavaScript & API
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
